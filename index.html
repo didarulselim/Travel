@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>FadeShow simple CSS3 slideshow</title>
+
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">i
+	<link rel="stylesheet" href="css/jquery.fadeshow-0.1.1.min.css" />
+	<link rel="stylesheet" href="css/demo.css" />
+	
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="background"></div>
+
+	<div class="nav-header container">
+		<div class="row">
+			<div class="col-md-12 col-sm-12 col-xs-12">
+			<div class="col-md-6 col-sm-6">
+				<p><span class="fa fa-phone" aria-hidden="true"></span>Any Questions? Call Us: +91-22-4003-3403</p>
+			</div>
+			<div class="col-md-6 col-sm-6 system-menu">
+			<p><span class="fa fa-user" aria-hidden="true"></span> Register Now</p>
+			<p>|</p>
+				<p class="sys-login"><span class="fa fa-sign-in" aria-hidden="true"></span> Login</p>
+				
+			</div>
+				
+			</div>
+		</div>
+	</div>
+	<nav class="navbar navbar-default nav-menu">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img src="img/DT-blue-logo.png" class="img-responsive"></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right main-menu">
+        <li><a href="packages.html">PACKAGES</a></li>
+        <li><a href="offers_&_deals.html">OFFERS & DEALS</a></li>
+        <li><a href="hotels.html">HOTELS</a></li>
+        <li><a href="flights.html">FLIGHTS</a></li>
+        <li><a href="m.i.c.e.html"> M.I.C.E.</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- nav menu -->
+
+<section class="container sharch">
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+		<h3 class="sharch-heading">SEARCH PACKAGES</h3>
+		<hr class="hor">
+			<form class="form-inline sharch-btn">
+  <div class="form-group fr-gp">
+    
+    <div class="input-group fr-gp">
+     
+      <input type="text" class="form-control" id="exampleInputAmount" placeholder="Enter Place, City or Destinations">
+      <div class="input-group-addon igp"><span class="fa fa-search" aria-hidden="true"></span></div>
+    </div>
+  </div>
+  
+</form>
+		</div>
+	</div>
+</section>
+
+<section class="container service">
+	<div class="row">
+		<div class="col-md-12 col-sm-12">
+			<div class="col-md-3 col-sm-3">
+				 <h3><span class="fa fa-glass" aria-hidden="true"></span> Holidays</h3>
+				<p>Get the Best deals on Holiday Packages to multiple destinations across the world.</p>
+			</div>
+			<div class="col-md-3 col-sm-3">
+			<h3><span class="fa fa-plane" aria-hidden="true"></span>Cheap 
+			Flights</h3>
+			<p>Book Cheap Air tickets to any destination across the world. Best Price Guarantee.</p>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<h3><span class="fa fa-bed" aria-hidden="true"></span> Hotels & 
+				Resorts</h3>
+				<p>Choose from more than 10000 Best rated Hotels from cheap hotels to luxurious resorts.</p>
+			</div>
+			<div class="col-md-3 col-sm-3">
+				<h3><span class="fa fa-connectdevelop" aria-hidden="true"></span>Convenience</h3>
+				<p>Experience the convenience and savings. Search for hotels, holidays, flights in a user-friendly website.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+	<script src="src/jquery-1.11.2.min.js" type="text/javascript"></script>
+	<script src="src/jquery.fadeshow-0.1.2.js" type="text/javascript"></script>
+	 <script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		var fadeShow = $(".background").fadeShow({
+			correctRatio: true,
+			shuffle: true,
+			speed: 8000,
+			images: ['img/bg-1.jpg',
+					 'img/bg-2.jpg',
+					 'img/bg-3.jpg',
+					 'img/bg-4.jpg',
+					 'img/bg-5.jpg']
+		});
+	});
+	</script>
+</body>
+</html>
